@@ -53,16 +53,34 @@ Enhanced pawn rules replacing classical pawns:
 Classical movement (rook/bishop/knight/queen) plus:
 
 ### Sphere of Influence
-- Radius assigned by king (0-3 squares)
-- Moving through friendly sticky pawns = pick them up (break chain)
+- Radius assigned by king from budget (0-3 squares per piece)
 - Within sphere: reveals hidden piece identities (pierces fog)
-- King can change one piece's sphere radius per turn (costs king's move)
+- **DRAG RULE:** When a high piece moves, ALL pieces in its sphere move 1 square in the same direction
+  - If ANY piece in the sphere would collide (friendly or enemy) → ENTIRE MOVE IS ILLEGAL
+  - Big sphere = more power but harder to maneuver without collision
+  - The sphere is a liability AND an asset — dragging friendlies means checking every square
+  - Moving through friendly sticky pawns = picks them up (break chain), but still must check drag collisions
+- Sphere-covered ground IS a resource — overlapping enemy spheres = contested territory
 
-## King Orders
+## King Orders — Budget System
 
-- King can assign sphere of influence to one piece per turn
+- King gets a SPHERE BUDGET each turn (total points to distribute)
+- Budget = base 5 + bonus from controlled territory (sphere-covered ground)
+- Each sphere radius costs: r=1 costs 1pt, r=2 costs 3pt, r=3 costs 6pt (triangular)
+- King distributes budget across ALL pieces at start of turn (not just one)
 - Giving orders = king cannot move that turn
-- Strategic choice: move king to safety OR empower a piece
+- If king moves instead: sphere assignments stay from last turn (no redistribution)
+- Strategic choices:
+  - Many small spheres (1pt each) = wide vision, easy to maneuver
+  - One big sphere (6pt) = deep influence but drag makes movement risky
+  - Save budget = no spheres, king moves freely, fog covers everything
+  
+| Radius | Cost | Drag | Use case |
+|--------|------|------|----------|
+| 0 | 0 | None | Stealth — piece is invisible, moves alone |
+| 1 | 1 | Adjacent 8 squares shift | Scout — light influence, low drag |
+| 2 | 3 | 24 squares shift | Officer — medium influence, careful movement |
+| 3 | 6 | 48 squares shift | General — heavy influence, very hard to move |
 
 ## Fog of War
 
