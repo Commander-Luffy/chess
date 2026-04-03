@@ -188,6 +188,65 @@ Between ticks:
   - Spy reports arrive
 ```
 
+## Emergent Faction Pieces — Forced, Autonomous
+
+When hidden and public layers align on the same side, they FORCE an autonomous piece into existence. These pieces have their own intentions. You can't stop the spawn. You can't fully control them.
+
+### CRUSADER (Physical Board)
+
+**Trigger:** Church spy network + Military general share a target (aligned intent)
+
+- Appears on physical board as a new piece (queen movement)
+- NOT player-controlled — has own AI personality
+- Will attack Church's enemies regardless of military strategy
+- WILL NOT retreat (fights to death, always advances)
+- If Church + Military alignment breaks → Crusader goes ROGUE (attacks everyone)
+- Ignores general's commands if they conflict with Church goals
+- Cannot be disbanded — can only be killed or go rogue
+- Historical archetype: the holy warrior who serves the idea, not the king
+
+### ANONYMOUS (Digital Board)
+
+**Trigger:** Hacker breaches a firewall AND Tech noble approves the breach (aligned intent)
+
+- Appears on digital board as a new piece (free movement, ignores firewalls)
+- NOT player-controlled — has own AI personality
+- Leaks ALL intel it touches to BOTH sides (pure transparency, no loyalty)
+- Steals IP and makes it PUBLIC (nobody profits, everyone knows)
+- If Tech + Hacker alignment breaks → Anonymous turns on its creator
+- Cannot be firewalled — moves through everything
+- Can only be stopped by BOTH tech sides cooperating to counter-hack
+- Modern archetype: the hacktivist who serves information freedom, not any master
+
+### The Pattern
+
+Both Crusader and Anonymous are the same thing: **when power and shadow align, something emerges that serves the IDEA, not the people who created it.**
+
+- You summon them through alignment (intentional or accidental)
+- You benefit from them briefly (they attack your enemies)
+- You lose control of them inevitably (they serve the idea, not you)
+- They can only be destroyed, never commanded
+- The longer they exist, the more dangerous they become to everyone
+
+This is the Conqueror's Haki problem: some forces, once unleashed, don't obey anyone.
+
+### CIVIL WAR (Succession Crisis)
+
+**Trigger:** Both tech layers (Church + Elections) oppose ONE military general
+
+When the tech side BOTH hate the same general:
+- Church refuses to support (spies withdraw)
+- Elections vote against (pieces refuse orders)
+- The general's army SPLITS — loyal pieces vs rebel pieces
+- A new general candidate emerges from the rebels (highest status pawn)
+- Civil war plays out on the SAME quadrant — internal chess within the chess
+- During civil war: the quadrant is VULNERABLE (neighbors can invade)
+- Resolution: one general wins, loser's pieces defect or die
+- The COST: the quadrant is weakened regardless of who wins
+- Post-civil war: new general must rebuild trust with tech side
+
+Civil war is the worst outcome for a quadrant — it's a self-inflicted wound that benefits every neighbor. But sometimes it's the only way to remove a bad leader that elections (tech) and status (military) can't fix alone.
+
 ## The Information Game
 
 Nobody sees everything:
