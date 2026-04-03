@@ -230,41 +230,77 @@ Both Crusader and Anonymous are the same thing: **when power and shadow align, s
 
 This is the Conqueror's Haki problem: some forces, once unleashed, don't obey anyone.
 
+### COLD WAR MECHANICS — Bubbled 1v1 Sidequests
+
+**Critical rule: Civil War and Patriotic Cyber War are ALWAYS COLD.**
+
+No "splitting" or "flooding." Instead, the targeted player enters a BUBBLE — a separate 1v1 sidequest that runs INSIDE the main game's turns. The main board continues without them at full capacity.
+
+#### Fractal Turn Structure
+
+```
+Main tick A (4 players):
+  ├── Player 1: main board move
+  ├── Player 2: main board move
+  │     └── [BUBBLE: Player 2 gets 3 sub-ticks of their 1v1 sidequest]
+  ├── Player 3: main board move
+  └── Player 4: main board move
+
+Main tick B:
+  ├── same, bubbles continue or resolve
+```
+
+- The upper layer timer CONTROLS the bubble's clock
+- Each main tick gives the bubbled player N sub-ticks (3 default)
+- If the bubble doesn't resolve in time: it PAUSES
+- Player returns to main board weakened, bubble resumes on their next main tick
+- Playing two games at once = both suffer
+
+#### The Bubble
+
+- A separate mini-board (the 1v1 happens in its own space)
+- The 3rd player exists as TWO 1v1s: one against the rebel/attacker, one on the main board
+- Main board opponents see the bubbled player as DISTRACTED (reduced sphere budget, -50%)
+- The bubble is a COLD conflict: no resources flow between bubble and main board
+- Resolution: one side wins the 1v1 → bubble collapses → winner returns at full strength
+- Timeout: bubble pauses → player returns at half strength → bubble continues next tick
+
 ### CIVIL WAR (Succession Crisis)
 
 **Trigger:** Both tech layers (Church + Elections) oppose ONE military general
 
-When the tech side BOTH hate the same general:
-- Church refuses to support (spies withdraw)
-- Elections vote against (pieces refuse orders)
-- The general's army SPLITS — loyal pieces vs rebel pieces
-- A new general candidate emerges from the rebels (highest status pawn)
-- Civil war plays out on the SAME quadrant — internal chess within the chess
-- During civil war: the quadrant is VULNERABLE (neighbors can invade)
-- Resolution: one general wins, loser's pieces defect or die
-- The COST: the quadrant is weakened regardless of who wins
-- Post-civil war: new general must rebuild trust with tech side
+- General enters a BUBBLE
+- Inside the bubble: general's army vs rebel army (highest-status pawn promoted to rebel leader)
+- Rebel army = all pieces with morale ≤50 at time of trigger
+- Loyal army = remaining pieces
+- 1v1 chess in the bubble with limited sub-ticks per main tick
+- Resolution: one side has no king-equivalent → winner takes the quadrant
+- During bubble: general plays BOTH main board (weakened) and bubble 1v1
+- The COST: distraction on main board + no mine production from that quadrant during civil war
 
 ### PATRIOTIC CYBER WAR
 
 **Trigger:** Both military generals (News layers) oppose ONE tech noble
 
-When both generals hate the same tech player:
-- News publishes "enemy of the state" propaganda against the tech noble
-- Military from BOTH sides temporarily ceases fire to target the tech quadrant
-- The tech noble's digital board gets FLOODED — both generals' hackers join as state-sponsored attackers
-- Anonymous spawns AGAINST the tech noble (military alignment hijacks the hacktivist)
-- The noble's Church network gets exposed by combined military intel
-- Tech noble must: surrender IP, flee (leave board), or find the OTHER tech noble as ally
-- If other tech noble helps → the war becomes 2v2 (both military vs both tech)
-- If other tech noble betrays → the targeted noble is eliminated, their assets split between generals
-- Duration: lasts until one general breaks the alliance (they always do — they're competing too)
+- Tech noble enters a BUBBLE on the digital board
+- Inside the bubble: noble's hackers vs state-sponsored hackers (from both generals)
+- State hackers = 2 per general (4 total invaders), ignore firewalls
+- Noble defends with own hackers + firewalls
+- 1v1 on digital mini-board with limited sub-ticks per main tick
+- Resolution: all noble's IP destroyed → noble eliminated, assets split between generals
+  OR noble survives 5 bubble-rounds → gains HARDENED status (permanent firewall +1)
+- During bubble: noble plays BOTH digital main layer (weakened) and bubble defense
+- Both generals' temporary alliance expires when bubble resolves (they always turn on each other)
 
-Patriotic cyber war is the digital equivalent of civil war. Civil war splits a quadrant internally. Patriotic cyber war unites ENEMIES against a shared "threat to the nation."
+### Why COLD
 
-The irony: both generals are still enemies. They cooperate against tech only because controlling information (News) is easier when tech can't counter it. The moment the tech threat is gone, they turn on each other again.
+- HOT war = immediate chaos, hard to control, breaks game state
+- COLD war = contained sidequest, fractal turns, controlled escalation
+- The main board CONTINUES — other players don't stop while you're in crisis
+- The pressure: resolve your bubble FAST or fall behind on the main board
+- The strategy: sometimes ENTERING a cold war is worth it (you gain from the sidequest even if you're distracted)
 
-Civil war is the worst outcome for a quadrant — it's a self-inflicted wound that benefits every neighbor. But sometimes it's the only way to remove a bad leader that elections (tech) and status (military) can't fix alone.
+Civil war is still the worst outcome for a quadrant — but now it's a MANAGEABLE worst outcome. You're fighting on two fronts, not watching your quadrant explode.
 
 ## Village Metrics — The Cell's Vital Signs
 
