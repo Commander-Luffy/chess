@@ -245,6 +245,25 @@ When the tech side BOTH hate the same general:
 - The COST: the quadrant is weakened regardless of who wins
 - Post-civil war: new general must rebuild trust with tech side
 
+### PATRIOTIC CYBER WAR
+
+**Trigger:** Both military generals (News layers) oppose ONE tech noble
+
+When both generals hate the same tech player:
+- News publishes "enemy of the state" propaganda against the tech noble
+- Military from BOTH sides temporarily ceases fire to target the tech quadrant
+- The tech noble's digital board gets FLOODED — both generals' hackers join as state-sponsored attackers
+- Anonymous spawns AGAINST the tech noble (military alignment hijacks the hacktivist)
+- The noble's Church network gets exposed by combined military intel
+- Tech noble must: surrender IP, flee (leave board), or find the OTHER tech noble as ally
+- If other tech noble helps → the war becomes 2v2 (both military vs both tech)
+- If other tech noble betrays → the targeted noble is eliminated, their assets split between generals
+- Duration: lasts until one general breaks the alliance (they always do — they're competing too)
+
+Patriotic cyber war is the digital equivalent of civil war. Civil war splits a quadrant internally. Patriotic cyber war unites ENEMIES against a shared "threat to the nation."
+
+The irony: both generals are still enemies. They cooperate against tech only because controlling information (News) is easier when tech can't counter it. The moment the tech threat is gone, they turn on each other again.
+
 Civil war is the worst outcome for a quadrant — it's a self-inflicted wound that benefits every neighbor. But sometimes it's the only way to remove a bad leader that elections (tech) and status (military) can't fix alone.
 
 ## The Information Game
