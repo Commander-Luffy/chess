@@ -5,11 +5,20 @@
 ## Layer Architecture (corrected)
 
 ```
-L3: GoL grid       — cells alive/dead, B3/S23, neighbor count
-L2: Village (THIS) — buildings, policies, resources, TW mechanics, Victoria governance
-L1: Chess-RTS      — 4 players, pieces, spheres, fog, movement
-L0: Digital         — hackers, IP, firewalls, Church shadow
+L3: GoL grid       — cells alive/dead, B3/S23, neighbor count (TBD after L2 works)
+L2: Village (2D)   — policies create fabric from entangled L0×L1 = SU(2) surface
+L1: Chess-RTS (1D) — 4 players, pieces, spheres, fog, movement = 1D GoL
+L0: Control (0D)   — can't exist alone, IS the control plane for ALL layers
+                     anti-board: inverse of L1 (piece=void, empty=IP)
+                     economic effects propagate from L0 to ANY layer
 ```
+
+**Dimensional GoL stack:**
+- L0 = 0D (point): no independent existence, but controls economy at all layers
+- L1 = 1D GoL: chess pieces as cellular automata
+- L2 = 2D GoL: L0 and L1 as entangled parallel dimensions, viewed as fabric
+- L0/L1 entanglement = SU(2): rotate one, the other changes. From L2 both rotations are one transformation.
+- Patterns visible at L2 are INVISIBLE from within L0 or L1 alone.
 
 Each layer only knows its own rules. Outcomes flow UP. Policies flow DOWN.
 
