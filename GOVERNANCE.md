@@ -13,6 +13,56 @@ L0: Digital         — hackers, IP, firewalls, Church shadow
 
 Each layer only knows its own rules. Outcomes flow UP. Policies flow DOWN.
 
+## Currency Separation (CRITICAL)
+
+**Two different economies at two different layers. They NEVER mix directly.**
+
+```
+L0 Digital: IP (intellectual property = the village's actual IP address/identity)
+  → spent on: hacker ops, firewall maintenance, digital board actions
+  → IP IS the address. Lose all IP = village has no identity on the network.
+  → stays at L0. Chess and Village never touch IP directly.
+
+L1 Chess-RTS: MINERALS (raw, from center 3×3 mine)
+  → spent on: pieces, equipment, combat, in-game trades
+  → stays at L1. Village never touches minerals.
+
+L2 Village: 4 POINT TYPES (derived from L1+L0 outcomes)
+  → TECH points:     from IP income, trade profits, research
+  → CYBER points:    from hacker wins, firewall defense, Church intel
+  → MILITARY points: from captures, territory held, raids
+  → FAITH points:    from Church radius, Statue/Round Table, Nash agreements
+  → spent on: buildings, policies, GoL-layer interactions
+  → stays at L2. Chess never touches village points.
+
+L3 GoL: VILLAGE CURRENCY (surplus of all L2 points combined)
+  → spent on: inter-village trade, expansion, GoL-layer defense
+```
+
+**L0 IP is DUAL meaning:**
+- In-game: intellectual property (data assets the hackers steal/protect)
+- Meta-game: the village's IP ADDRESS on the GoL network grid
+- Lose all IP at L0 = your village has no identity = invisible to neighbors = cell effectively dead
+- IP is both the RESOURCE and the IDENTITY at L0
+
+**The conversion (outcomes UP, policies DOWN):**
+```
+L1 produces OUTCOMES:
+  "General captured 3 pieces"     → L2 receives +3 MILITARY
+  "Noble sold IP license"         → L2 receives +5 TECH  
+  "Hacker breached firewall"      → L2 receives +2 CYBER
+  "Nash equilibrium reached"      → L2 receives +4 FAITH
+  "Trade route earned 10 minerals"→ L2 receives +2 TECH (not minerals!)
+
+L2 sets POLICIES (costs village points, modifies L1):
+  "Conscription" (3 MILITARY pts) → L1: new pawns auto-assigned to general
+  "Research Grant" (5 TECH pts)   → L1: tech noble gets +2 mineral income in chess
+  "Crusade" (8 FAITH pts)         → L1: Crusader spawn conditions relaxed
+  "Cyber Shield" (4 CYBER pts)    → L0: all firewalls +1 for 5 ticks
+```
+
+**Minerals are chess money. Village points are governance currency. Different games, different wallets.**
+
 ## Policy-as-Code
 
 Policies are coded loops injected into the chess-RTS engine (L1). The village player (L2) sets them. The chess engine executes them as behavior modifiers. Results appear in village metrics after N ticks.
@@ -45,16 +95,18 @@ LOOKing costs a fraction of LOCKing because it runs on a SIMULATED board. The si
 
 Buildings exist at L2. They influence L1 chess and L0 digital through policies, not direct placement.
 
-| Building | Effect | Build cost | Upkeep/tick | What it represents |
+| Building | Effect | Build cost | Upkeep/tick | Currency |
 |---|---|---|---|---|
-| STATUE | Morale floor +20 all pieces | 5 minerals | 1 | People see themselves in power |
-| ROUND TABLE | Disputes → vote not war (civil war prevention) | 8 minerals | 2 | No single seat of power |
-| TAVERN | News propaganda -50% effectiveness | 5 minerals | 1 | People talk to each other |
-| WALL | Military spending perceived as protective | 8 minerals | 2 | Transparent security |
-| CHURCH | Outward influence radius (TW model). Per level. | 3 × level | level × 1 | Faith projection |
-| BARRACKS | Piece upkeep -1 for military pieces | 6 minerals | 2 | Professional army |
-| MARKET | Trade route income +50% | 7 minerals | 2 | Commerce hub |
-| FORGE | New piece manufacturing -1 cost | 6 minerals | 1 | Industrial base |
+| STATUE | Morale floor +20 all pieces | 5 FAITH | 1 FAITH | Faith → stability |
+| ROUND TABLE | Disputes → vote not war | 4 FAITH + 4 TECH | 1 FAITH + 1 TECH | Shared governance |
+| TAVERN | News propaganda -50% | 5 TECH | 1 TECH | Free information |
+| WALL | Military perceived as protective | 4 MILITARY + 4 FAITH | 1 MILITARY + 1 FAITH | Security + trust |
+| CHURCH | Outward influence radius | 3 FAITH × level | level × 1 FAITH | Faith projection |
+| BARRACKS | Piece upkeep -1 mineral in L1 | 6 MILITARY | 2 MILITARY | Professional army |
+| MARKET | Trade route income +50% in L1 | 7 TECH | 2 TECH | Commerce hub |
+| FORGE | Piece manufacturing -1 mineral in L1 | 6 TECH | 1 TECH | Industrial base |
+| FIREWALL HQ | Digital board firewalls +1 | 5 CYBER | 2 CYBER | Cyber defense |
+| SPY ACADEMY | Church spy placement free (normally costs CYBER) | 8 CYBER | 2 CYBER | Intelligence infrastructure |
 
 Building degrades if upkeep unpaid. Effect weakens then disappears.
 
@@ -86,20 +138,31 @@ You don't "produce population." You create conditions where population grows.
 
 ## Upkeep — Everything Costs
 
-| Thing | Upkeep/tick | If unpaid |
+### L1 Upkeep (MINERALS — chess layer)
+
+| Thing | Minerals/tick | If unpaid |
 |---|---|---|
 | Pawn (Flint-Pawn) | 0 | — |
 | Knight / Bishop | 1 | Idle (1 tick) → defect (2) → leave (3) |
 | Rook | 2 | Same escalation |
 | Queen | 3 | Same escalation |
 | Mercenary | 3 | Defect after 1 missed → leave with resources after 2 |
-| Buildings | See building table | Degrade → lose effect |
-| Trade routes | 1 per route | Route pauses |
-| Church radius | level × 1 | Radius shrinks |
-| Active policies | 1 per policy | Auto-unlock |
-| Cold war bubble | 2 per tick | Can't avoid — just bleeds |
+| Trade routes (L1 path) | 1 mineral per route | Route pauses |
 
-**The constraint:** total upkeep cannot exceed income or you're in DEFICIT. Deficit for 3+ ticks triggers snowball breaker events. You can't maintain more than your economy supports.
+### L2 Upkeep (VILLAGE POINTS — governance layer)
+
+| Thing | Points/tick | Type | If unpaid |
+|---|---|---|---|
+| Buildings | See building table | Mixed | Degrade → lose effect |
+| Church radius | level × 1 | FAITH | Radius shrinks |
+| Active policies | 1 per policy | Matching type | Auto-unlock |
+| Cold war bubble | 1 MILITARY + 1 FAITH | Mixed | Can't avoid — bleeds |
+
+**Two separate deficit checks:**
+- L1: mineral income < mineral upkeep → pieces degrade
+- L2: any point type income < that type's upkeep → buildings/policies fail
+- L1 deficit doesn't directly cause L2 deficit (but fewer L1 outcomes = less L2 income next tick)
+- The layers are coupled through OUTCOMES, not through shared currency
 
 ## The Victoria Loop
 
