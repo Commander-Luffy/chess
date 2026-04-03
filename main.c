@@ -34,23 +34,45 @@ void initBoard(Game *g) {
     strcpy(g->lastMove, "----");
 }
 
+/* Unicode chess pieces — actual symbols */
+const char *pieceGlyph(char p) {
+    switch (p) {
+        case 'K': return "\u2654"; /* ♔ */
+        case 'Q': return "\u2655"; /* ♕ */
+        case 'R': return "\u2656"; /* ♖ */
+        case 'B': return "\u2657"; /* ♗ */
+        case 'N': return "\u2658"; /* ♘ */
+        case 'P': return "\u2659"; /* ♙ */
+        case 'k': return "\u265A"; /* ♚ */
+        case 'q': return "\u265B"; /* ♛ */
+        case 'r': return "\u265C"; /* ♜ */
+        case 'b': return "\u265D"; /* ♝ */
+        case 'n': return "\u265E"; /* ♞ */
+        case 'p': return "\u265F"; /* ♟ */
+        default:  return " ";
+    }
+}
+
 void printBoard(Game *g) {
+    int dark;
     printf("\n");
-    printf("    a   b   c   d   e   f   g   h\n");
-    printf("  +---+---+---+---+---+---+---+---+\n");
+    printf("     a    b    c    d    e    f    g    h\n");
+    printf("  +----+----+----+----+----+----+----+----+\n");
     for (int r = 0; r < 8; r++) {
         printf("%d |", 8 - r);
         for (int c = 0; c < 8; c++) {
             char p = g->board[r][c];
-            if (p == '.')
-                printf("   |");
-            else
-                printf(" %c |", p);
+            dark = (r + c) % 2;
+            if (p == '.') {
+                printf(" %s  |", dark ? "::" : "  ");
+            } else {
+                printf(" %s  |", pieceGlyph(p));
+            }
         }
         printf(" %d\n", 8 - r);
-        printf("  +---+---+---+---+---+---+---+---+\n");
+        printf("  +----+----+----+----+----+----+----+----+\n");
     }
-    printf("    a   b   c   d   e   f   g   h\n");
+    printf("     a    b    c    d    e    f    g    h\n");
     printf("\n  Move %d | %s to play | Last: %s\n",
            g->moveCount + 1,
            g->turn == 0 ? "White" : "Black",
