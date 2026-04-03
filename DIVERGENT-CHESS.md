@@ -136,3 +136,49 @@ The game rewards preservation, not destruction.
 | Teleport on home rank | Loopback address (return to any home interface) |
 | Lesson-based victory | Troubleshooting (identify the root cause without destroying the network) |
 | Piece leaving the board | Interface administratively shutdown by operator |
+
+## GoL Meta-Layer — Villages as Cells
+
+The chess board IS a Game of Life cell. Multiple matches form a GoL grid.
+
+### Board: 16×16, 4-Player
+
+- 4 players, 4 quadrants (corners), shared center
+- Each quadrant's surviving pieces = one village = one GoL cell
+- Standard 4-way chess layout on power-of-2 grid (maps to subnet)
+
+### Cell Lifecycle
+
+1. 4 players play divergent chess simultaneously on shared 16×16 board
+2. Pairwise Nash equilibrium between adjacent quadrants = cells ALIVE
+3. Stalemate / surrender / checkmate = cell DEAD (resets)
+4. Surviving pieces after Nash = village starting population for next tick
+5. GoL tick (B3/S23): count alive neighbor villages
+   - 2-3 neighbors alive → village survives
+   - <2 or >3 → village dies (resets)
+   - Exactly 3 dead neighbors around empty cell → new village spawns
+
+### Why 4 Players (2 Humans + 2 Flints)
+
+- 2 human players = GENERALS (external strategy — borders, neighbors, GoL meta)
+- 2 promoted Flints = NOBLES (AI, internal governance — economy, village stability)
+- Nobles run the inner country: manage pieces, assign tasks, maintain Nash internally
+- Generals worry about external: neighbor count, block survival, expansion
+- Flints promoted to noble = they earned trust through the chess match (the idle stream trained them)
+- Nobles can be overridden by generals but it costs budget (king orders apply)
+- 4-player = BLOCK (2×2 still life), each cell has exactly 3 neighbors
+- Block = first stable GoL structure = first "alive" Tribal Wars village cluster
+
+### The Meta-Game
+
+- Individual goal: reach Nash in your quadrant matchups (keep your cell alive)
+- Collective goal: keep ALL 4 quadrants alive (the block survives)
+- Tension: competing within the chess match vs cooperating for the block
+- Timer: GoL tick deadline — if you haven't reached Nash, your cell is dead regardless
+
+### Tribal Wars Convergence
+
+- Villages that survive multiple GoL ticks grow (more pieces, bigger sphere budgets)
+- Adjacent blocks can merge into larger GoL structures (oscillators, gliders)
+- The chess game at village level IS the economy at Tribal Wars level
+- Block = village cluster. Oscillator = trade route. Glider = expansion fleet.
