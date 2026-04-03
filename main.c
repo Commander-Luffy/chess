@@ -282,9 +282,19 @@ int makeMove(Game *g, int r1, int c1, int r2, int c2) {
         }
     }
 
-    /* Pawn promotion */
+    /* Pawn promotion — player chooses */
     if (tolower(piece) == 'p' && (r2 == 0 || r2 == 7)) {
-        g->board[r2][c2] = isupper(piece) ? 'Q' : 'q';
+        char choice = 0;
+        printf("\n  PROMOTION! Choose piece:\n");
+        printf("  [Q] ♕ Queen  [R] ♖ Rook  [B] ♗ Bishop  [N] ♘ Knight\n  > ");
+        fflush(stdout);
+        char buf[16];
+        if (fgets(buf, sizeof(buf), stdin)) {
+            choice = toupper(buf[0]);
+        }
+        if (choice != 'Q' && choice != 'R' && choice != 'B' && choice != 'N') choice = 'Q';
+        g->board[r2][c2] = isupper(piece) ? choice : tolower(choice);
+        printf("  Promoted to %s\n", pieceGlyph(g->board[r2][c2]));
     }
 
     /* Check if move leaves own king in check — illegal */
