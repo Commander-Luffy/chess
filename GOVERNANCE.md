@@ -6,19 +6,29 @@
 
 ```
 L3: GoL grid       — cells alive/dead, B3/S23, neighbor count (TBD after L2 works)
-L2: Village (2D)   — policies create fabric from entangled L0×L1 = SU(2) surface
-L1: Chess-RTS (1D) — 4 players, pieces, spheres, fog, movement = 1D GoL
-L0: Control (0D)   — can't exist alone, IS the control plane for ALL layers
-                     anti-board: inverse of L1 (piece=void, empty=IP)
-                     economic effects propagate from L0 to ANY layer
+L2: Village (2D)   — policies create fabric, SU(2) surface from entangled L0×L1
+L1: Chess-RTS (2D) — 16×16, 4 players, pieces, spheres, fog, the PHYSICAL game
+L0: THE INTERNET   — not a board. The MEDIUM. Chat, code, access control, AI helper.
+                     Holds the source code for all layers.
+                     Gates information flow between players and layers.
+                     Communication channel: messages (ranked priority) and prayers (to gods).
 ```
 
-**Dimensional GoL stack:**
-- L0 = 0D (point): no independent existence, but controls economy at all layers
-- L1 = 1D GoL: chess pieces as cellular automata
-- L2 = 2D GoL: L0 and L1 as entangled parallel dimensions, viewed as fabric
-- L0/L1 entanglement = SU(2): rotate one, the other changes. From L2 both rotations are one transformation.
-- Patterns visible at L2 are INVISIBLE from within L0 or L1 alone.
+**L0 is infrastructure, not gameplay:**
+- Chat between players at same dimension
+- Holds the CODE for all layers (IP = intellectual property = source code = identity)
+- Firewalls = actual access control on who sees what
+- Link-fairy AI helper (navigation, translation between layer languages)
+- Message priority: General > Noble > Knight/Rook > Pawn > Flint-Pawn
+- Pray: chat with busy L3 god entity — "will make it happen" or "ok" (ignored)
+- L0 renders as a CHAT WINDOW, not a board
+
+**Dimensional stack corrected:**
+- L0 = the network (medium, infrastructure, 0D from game perspective — no independent gameplay)
+- L1 = 2D physical board (chess-RTS, the actual game)
+- L2 = 2D policy surface (views L1 outcomes + L0 communications as entangled fabric)
+- L0×L1 entanglement: L0 carries the information, L1 produces the outcomes. SU(2) from L2's view.
+- Patterns visible at L2 invisible from within L1. L0 sees everything but can't play.
 
 Each layer only knows its own rules. Outcomes flow UP. Policies flow DOWN.
 
