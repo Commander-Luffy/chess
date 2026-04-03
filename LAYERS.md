@@ -21,6 +21,36 @@ Military leaders rise through STATUS. Promotions are earned.
 - Highest-status general commands → if a pawn earns enough status, it CAN challenge the general
 - Failed challenge = pawn demoted. Successful = coup (new general, old general becomes pawn)
 
+### Military Hidden Layer: THE NEWS
+
+The News is to the General what the Church is to the Noble. Propaganda, narrative control, morale warfare.
+
+Each general gets a SECRET action every turn (not visible to others):
+
+| Action | Effect | Risk |
+|---|---|---|
+| Publish victory | Boost own troops morale (+5 all pieces) even if you lost | If exposed as false: massive morale crash |
+| Smear opponent | Lower enemy troop morale (-5 their pieces) | If detected: your own troops lose trust |
+| Spin raid | Reframe YOUR raid as opponent's (narrative cover) | Requires message-in-bottle planted first |
+| Censor loss | Hide a captured piece from your own side (they don't know they lost it) | Piece still gone, but morale doesn't drop |
+| Leak intel | Feed false military info to opponent's Church | Church may act on bad data |
+| Rally cry | Sacrifice 2 minerals for +15 morale across all pieces | Expensive but no risk |
+
+**The News shapes what pieces BELIEVE happened, not what DID happen.**
+
+- Pieces with high morale fight better (bonus to capture rolls if we add dice)
+- Pieces with low morale may refuse orders (skip turn) or defect
+- The News is HOW the general maintains control without merit — pure narrative
+- A general who wins battles doesn't need News. One who loses DEPENDS on it.
+
+**Church vs News:**
+- Church controls what people believe about GOD/TRUTH (long-term, deep, slow)
+- News controls what people believe about EVENTS (short-term, surface, fast)
+- Church plants agents who change loyalty over time
+- News publishes stories that change morale immediately
+- Church works in the dark (nobody sees it)
+- News works in the light (everyone sees it but can't verify)
+
 ### Military Actions
 
 | Action | Effect | Cost |
