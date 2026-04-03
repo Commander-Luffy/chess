@@ -266,6 +266,74 @@ The irony: both generals are still enemies. They cooperate against tech only bec
 
 Civil war is the worst outcome for a quadrant — it's a self-inflicted wound that benefits every neighbor. But sometimes it's the only way to remove a bad leader that elections (tech) and status (military) can't fix alone.
 
+## Village Metrics — The Cell's Vital Signs
+
+Each block-cell village has two scores that measure its health:
+
+### Tech Points (TP) + Military Points (MP)
+
+| Metric | Source | Measures |
+|---|---|---|
+| **Tech Points** | IP income, trade routes, contracts, hacker wins | How wealthy and innovative the tech side is |
+| **Military Points** | Captures, territory held, raids, status earned | How active and dominant the military side is |
+
+### The Delta — Stability Index
+
+`Stability = 1 / (1 + abs(TP - MP))`
+
+| TP vs MP | Delta | Phase | What happens |
+|---|---|---|---|
+| TP ≈ MP | Low delta | **STABLE** | Healthy oscillation. Blinker pulses. Village thrives. |
+| TP >> MP | High delta (tech leads) | **INNOVATION BUBBLE** | Tech snowballs, military can't compete, unrest builds |
+| MP >> TP | High delta (military leads) | **WARTIME ECONOMY** | Military snowballs, tech starved, economy collapses |
+
+### Surplus → Village Currency
+
+The COMBINED surplus (TP + MP - upkeep costs) becomes **village points** — currency on the upper GoL layer.
+
+Village points can be spent:
+- **Externally**: buy things on the GoL layer (expand, trade with neighbor villages, build defenses)
+- **Internally — government boost**: give points to a struggling player (welfare, subsidy)
+- **Internally — research**: invest in new mechanics (unlock new piece types, upgrade firewalls, new hacker abilities)
+
+The CHOICE of internal vs external spending is the village-level version of the player-level military/tech split. Invest in yourself or project outward.
+
+### The Snowball Trap
+
+When one player gets too far ahead:
+
+```
+Small lead → competitive advantage → larger lead → monopoly
+    ↓
+IP/war tech so advanced that competition is impossible DOWNWARDS
+    ↓
+The other players can't catch up through normal play
+    ↓
+The gap triggers an UNKNOWN EVENT
+```
+
+### Unknown Events (Snowball Breakers)
+
+When delta between strongest and weakest player exceeds a threshold, the system spawns a BLACK SWAN event. These are EXPENSIVE and UNPREDICTABLE:
+
+| Delta threshold | Event | Cost to leader | Effect |
+|---|---|---|---|
+| TP lead > 20 | **MARKET CRASH** | Lose 50% of all IP income for 10 turns | Tech bubble bursts, playing field levels |
+| MP lead > 20 | **MUTINY** | Strongest general's army morale → 0 | Pieces refuse orders, mass defection risk |
+| TP lead > 35 | **SINGULARITY** | ALL digital board resets, hackers/IP gone | Tech got too advanced, nobody understands it anymore |
+| MP lead > 35 | **REVOLUTION** | ALL physical pieces below knight defect to rebels | The people overthrow the conqueror |
+| Any lead > 50 | **CATACLYSM** | Village loses 1 GoL tick worth of progress | The gods intervene. The cell flickers. Near-death. |
+
+The snowball ALWAYS breaks. The question is HOW MUCH it costs.
+
+- Small snowball → market crash / mutiny → recoverable
+- Medium snowball → singularity / revolution → major setback but village survives
+- Large snowball → cataclysm → the village nearly dies, GoL cell may go dark
+
+**The lesson: domination is self-defeating.** The system punishes monopoly through emergent crises, not through rules. The physics of the economy + the social dynamics of the pieces CREATE the black swan. Nobody triggers it manually — it happens because the math says it must.
+
+This is the same conservation law: you can't concentrate power without paying the entropic cost. Energy in = energy out. Monopoly in = crisis out.
+
 ## The Information Game
 
 Nobody sees everything:
